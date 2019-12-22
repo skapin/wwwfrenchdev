@@ -1,0 +1,5 @@
+coreapi
+Django
+django-filter
+gunicorn
+django-starcross-gallery

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "stax-font";
+  src:url("fonts/stax-font.eot");
+  src:url("fonts/stax-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/stax-font.woff") format("woff"),
+    url("fonts/stax-font.ttf") format("truetype"),
+    url("fonts/stax-font.svg#stax-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "stax-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="stax-"]:before,
+[class*=" stax-"]:before {
+  font-family: "stax-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stax-ic:before {
+  content: "\63";
+}
+.stax-ic-alt:before {
+  content: "\64";
+}
+.stax-arduino:before {
+  content: "\65";
+}
+.stax-qt-2:before {
+  content: "\66";
+}
+.stax-qt:before {
+  content: "\67";
+}
+.stax-chip:before {
+  content: "\61";
+}
+.stax-symfony:before {
+  content: "\68";
+}
+.stax-3dprinter:before {
+  content: "\69";
+}
+.stax-3dprinter2:before {
+  content: "\6a";
+}
+.stax-ai:before {
+  content: "\6c";
+}
+.stax-api:before {
+  content: "\6d";
+}
+.stax-documentation:before {
+  content: "\6e";
+}
+.stax-sap:before {
+  content: "\6f";
+}
+.stax-ariba:before {
+  content: "\6b";
+}
+.stax-docker:before {
+  content: "\70";
+}
+.stax-vuejs:before {
+  content: "\71";
+}
+.stax-inkscape:before {
+  content: "\62";
+}

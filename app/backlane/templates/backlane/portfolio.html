@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" id="bodypage">
+	<div class="row">
+		<h1 class="skillheader">PORT FOLIO</h1>
+		<div class="col-md-10 col-md-offset-1">
+			<hr class="md">
+			<div class="row">
+					{% for w in folio %}
+					<div class="col-md-3 folio">
+						{{ w|safe }}
+					</div>
+					{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

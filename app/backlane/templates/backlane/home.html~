@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="intro content">
+	<div class="intro-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="brand-heading">Florian Boudinet<br><small>SkapiN</small></h1>
+					<p class="intro-text">Software Engineer - France</p>
+					<br>
+					<br>
+					<p class="intro-text">
+						<em class="icon-cplusplus iconize-md" data-toggle="tooltip" data-placement="bottom" title="PHP5"></em>
+						<em class="stax-chip iconize-md" style="padding-top:100px;" data-toggle="tooltip" data-placement="bottom" title="Embedded System"></em>
+						<em class="icon-php iconize-md" data-toggle="tooltip" data-placement="bottom" title="PHP5"></em>
+						<em class="icon-python iconize-md" data-toggle="tooltip" data-placement="bottom" title="Python"></em>
+						<em class="icon-angular iconize-md" data-toggle="tooltip" data-placement="bottom" title="AngularJS"></em>
+					</p>
+					<div class="page-scroll">
+						<a href="skills" class="btn btn-circle">
+							<i class="icon-angle-double-down animated"></i>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

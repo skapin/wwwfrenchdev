@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" id="bodypage">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<h1 class="skillheader">Programming</h1>
+			<hr class="md">
+				{% for w in programming %}
+					{{ w|safe }}
+				{% endfor %}
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-10  col-md-offset-1">
+			<h1 class="skillheader">Hardware</h1>
+			<hr class="md">
+			{% for w in hardware %}
+				{{ w|safe }}
+			{% endfor %}
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<h1 class="skillheader">Web</h1>
+			<hr class="md">
+			{% for w in web %}
+				{{ w|safe }}
+			{% endfor %}
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-10  col-md-offset-1">
+			<h1 class="skillheader">Tools</h1>
+			<hr class="md">
+			{% for w in tools %}
+				{{ w|safe }}
+			{% endfor %}
+		</div>
+	</div>
+	<br>
+	<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

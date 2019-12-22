@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" id="bodypage">
+	<div class="row">
+		<h1 class="skillheader">C.V</h1>
+		<hr class="md">
+		<a href=""><button type="button" class="btn  btn-xs"><i class="fa fa-download"></i> English</button></a>
+		<a href=""><button type="button" class="btn  btn-xs"><i class="fa fa-download"></i> Français</button></a>
+		<div class="timelining">
+			<ul>
+				{% for w in works %}
+					{{ w|safe }}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<br>
+	<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
