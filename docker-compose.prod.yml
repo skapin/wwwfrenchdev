@@ -1,0 +1,19 @@
+version: '2'
+services:
+  app-prod:
+    build: .
+    volumes:
+      - /usr/src/app
+    command: ["prod"]
+    restart: always
+  nginx:
+    build:
+      context: nginx/
+      dockerfile: Dockerfile.nginx
+    ports:
+      - 8000:80
+    volumes_from:
+      - app-prod
+    links:
+      - app-prod:web
+    restart: always
