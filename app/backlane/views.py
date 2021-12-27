@@ -34,15 +34,15 @@ def cv(request):
     aio_5.add_skill(SkillPool.skill('html'))
     aio_5.add_skill(SkillPool.skill('css'))
     aio_5.add_skill(SkillPool.skill('ops'))
-    aio_5.set_description(""" Design, code, test & deploy B2B & B2C e-commerce platform.
-    -> Set-based between PrestaShop, Magento & wooCommerce
-    -> Create test enviroment & production env. for Magento2 (using docker & git)
-    -> Setup Punch-Out Catalogue for Ariba 
-    -> Backup + CI pipeline
-    -> Add Redis+Varnish caceh system 
-    -> Apply, and customize theme to match our needs
-    -> Find and deploy extensions
-    -> Create analytics & export/improt data scripts
+    aio_5.set_description(""" Design, code, test & deploy B2B & B2C e-commerce platform.<br><br>
+    -> Set-based between PrestaShop, Magento & wooCommerce<br>
+    -> Create test enviroment & production env. for Magento2 (using docker & git)<br>
+    -> Setup Punch-Out Catalogue for Ariba <br>
+    -> Backup + CI pipeline<br>
+    -> Add Redis+Varnish caceh system <br>
+    -> Apply, and customize theme to match our needs<br>
+    -> Find and deploy extensions<br>
+    -> Create analytics & export/improt data scripts<br>
     """)
 
     aio_4 = CvWork('AIO', 'R&D', 'Aug 2018', 'Current')
@@ -62,7 +62,8 @@ def cv(request):
     aio_3.add_skill(SkillPool.skill('mobile'))
     aio_3.add_skill(SkillPool.skill('API'))
     aio_3.set_description(
-        """ Add Wi-Fi hotspot on our AGV. Provide API and mobile application to remote control the AGV easily. """)
+        """ Add Wi-Fi hotspot on our AGV. <br>
+        Provide API and mobile application to remote control the AGV easily. """)
 
     aio_2 = CvWork('AIO', 'Kanban Tools', 'March 2018', 'Current')
     aio_2.add_skill(SkillPool.skill('python'))
@@ -70,10 +71,10 @@ def cv(request):
     aio_2.add_skill(SkillPool.skill('vuejs'))
     aio_2.add_skill(SkillPool.skill('postgres'))
     aio_2.add_skill(SkillPool.skill('ops'))
-    aio_2.set_description(""" Tool around kanban for the supply-chain.
-        -> Andon system to check OK/NOK situation
-        -> Generate documents for productions with scanning system
-        -> Analytics""")
+    aio_2.set_description(""" Tool around kanban for the supply-chain.<br><br>
+        -> Andon system to check OK/NOK situation<br>
+        -> Generate documents for productions with scanning system<br>
+        -> Analytics<br>""")
 
     aio_1 = CvWork('AIO', 'Product Owner Numii', 'March 2018', 'Current')
     aio_1.add_skill(SkillPool.skill('python'))
@@ -87,9 +88,9 @@ def cv(request):
     aio_1.add_skill(SkillPool.skill('management'))
     aio_1.add_skill(SkillPool.skill('lean'))
     # aio_1.add_skill(SkillPool.skill('tableau'))
-    aio_1.set_description(""" Product Owner for Numii. 
+    aio_1.set_description(""" Product Owner for Numii. <br><br>
     Numii is the new scale for healthier workplaces, through the use of artificial intelligence. 
-    Featuring connected beacons, this swarm intelligence is creating the world’s first labour health database.
+    Featuring connected beacons, this swarm intelligence is creating the world’s first labour health database.<br><br>
     
     We allow CSR-conscious companies to imagine strategies made around health at work and, 
     more broadly, allows us to imagine decent jobs for all of us. 

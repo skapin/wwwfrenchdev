@@ -6,14 +6,33 @@ services:
       - /usr/src/app
     command: ["prod"]
     restart: always
+    labels:
+      - "traefik.enable=false"
+    networks:
+      - internal
   nginx:
     build:
       context: nginx/
       dockerfile: Dockerfile.nginx
-    ports:
-      - 8000:80
+#    ports:
+#      - 8000:80
     volumes_from:
       - app-prod
     links:
       - app-prod:web
     restart: always
+    networks:
+      - internal
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.fboudinet.rule=Host(`zifendel.com`)"
+      - "traefik.http.routers.fboudinet.entrypoints=websecure"
+      - "traefik.http.routers.fboudinet.tls.certresolver=myresolver"
+      - "traefik.docker.network=proxy"
+      - "traefik.port=80"
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
