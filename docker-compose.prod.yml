@@ -1,9 +1,10 @@
-version: '2'
+version: '3'
 services:
-  app-prod:
+  app:
     build: .
+    image: registry.zifendel.com/wwwfrenchdev/app:${version:-latest}
     volumes:
-      - /usr/src/app
+      - app:/usr/src/app
     command: ["prod"]
     restart: always
     labels:
@@ -16,10 +17,10 @@ services:
       dockerfile: Dockerfile.nginx
 #    ports:
 #      - 8000:80
-    volumes_from:
-      - app-prod
+    volumes:
+      - app:/usr/src/app
     links:
-      - app-prod:web
+      - app:web
     restart: always
     networks:
       - internal
@@ -36,3 +37,5 @@ networks:
     external: true
   internal:
     external: false
+volumes:
+  app:
