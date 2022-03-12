@@ -13,7 +13,7 @@ itypes==1.2.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 pilkit==2.0
-Pillow==6.2.1
+Pillow==9.0.1
 pytz==2020.1
 requests==2.23.0
 six==1.15.0
